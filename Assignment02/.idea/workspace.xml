@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="46c32ad2-c0eb-45c5-a30d-9409d0c781cd" name="Default Changelist" comment="" />
+    <list default="true" id="46c32ad2-c0eb-45c5-a30d-9409d0c781cd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Assignment03-04/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Assignment03-04/src/modules/business.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Assignment03-04/src/modules/testing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Assignment03-04/src/modules/user_interface.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment03-04/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment03-04/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment03-04/src/bank-account.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment03-04/src/bank_account.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment03-04/src/business.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment03-04/src/interface.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment03-04/src/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment03-04/src/modules/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment03-04/src/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment03-04/src/modules/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment03-04/src/validation.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment03-04/src/modules/validation.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,14 +57,23 @@
       <usages-collector id="statistics.vcs.git.usages" />
       <usages-collector id="statistics.js.language.service.starts" />
     </session>
+    <session id="47963273">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="203" column="73" lean-forward="true" selection-start-line="203" selection-start-column="73" selection-end-line="203" selection-end-column="73" />
+            <state relative-caret-position="289">
+              <caret line="269" column="17" selection-start-line="269" selection-start-column="4" selection-end-line="269" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -71,7 +92,11 @@
       <find>dictionary</find>
       <find>imag</find>
       <find>index</find>
+      <find>ui_print_dict</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -91,27 +116,12 @@
     <option name="width" value="1920" />
     <option name="height" value="1094" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Assignment02" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Assignment02" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Assignment02" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Assignment02" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -128,10 +138,27 @@
           <select />
         </subPane>
       </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Assignment02" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Assignment02" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Assignment02" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Assignment02" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -190,9 +217,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="1094" extended-state="6" />
+    <frame x="0" y="23" width="1920" height="1097" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25772098" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2603834" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -224,8 +252,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="203" column="73" lean-forward="true" selection-start-line="203" selection-start-column="73" selection-end-line="203" selection-end-column="73" />
+        <state relative-caret-position="289">
+          <caret line="269" column="17" selection-start-line="269" selection-start-column="4" selection-end-line="269" selection-end-column="17" />
         </state>
       </provider>
     </entry>
