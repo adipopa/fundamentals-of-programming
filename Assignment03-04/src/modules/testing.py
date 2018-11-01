@@ -75,6 +75,7 @@ def test_insert_transaction(bank_transactions, operations_queue):
     assert get_value(transaction) == 130
     assert get_type(transaction) == 'out'
     assert get_description(transaction) == 'second'
+
     insert_transaction(bank_transactions, operations_queue, 17, 25, 'out', 'third')
     transaction = bank_transactions[12]
     assert get_day(transaction) == 17

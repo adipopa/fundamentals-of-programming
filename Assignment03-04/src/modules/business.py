@@ -10,49 +10,55 @@ def add_transaction_to_list(bank_transactions, transaction):
     bank_transactions.append(transaction)
 
 
-def append_operations_queue(bank_transactions, operations_queue):
+def append_operations_queue(bank_transactions, last_transactions, operations_queue):
     if len(operations_queue) != 0:
-        if bank_transactions == operations_queue[-1]:
+        if bank_transactions == last_transactions:
             return
-    operations_queue.append(deepcopy(bank_transactions))
+    operations_queue.append(last_transactions)
 
 
 def add_transaction(bank_transactions, operations_queue, value, type, description):
-    append_operations_queue(bank_transactions, operations_queue)
+    last_transactions = deepcopy(bank_transactions)
     day = get_current_day()
     transaction = build_transaction(day, value, type, description)
     add_transaction_to_list(bank_transactions, transaction)
+    append_operations_queue(bank_transactions, last_transactions, operations_queue)
 
 
 def insert_transaction(bank_transactions, operations_queue, day, value, type, description):
-    append_operations_queue(bank_transactions, operations_queue)
+    last_transactions = deepcopy(bank_transactions)
     transaction = build_transaction(day, value, type, description)
     add_transaction_to_list(bank_transactions, transaction)
+    append_operations_queue(bank_transactions, last_transactions, operations_queue)
 
 
 def remove_transactions_by_day(bank_transactions, operations_queue, day):
-    append_operations_queue(bank_transactions, operations_queue)
+    last_transactions = deepcopy(bank_transactions)
     transactions_by_day = filter_out_transactions_by_day(bank_transactions, day)
     bank_transactions[:] = transactions_by_day
+    append_operations_queue(bank_transactions, last_transactions, operations_queue)
 
 
 def remove_transactions_by_day_interval(bank_transactions, operations_queue, start_day, end_day):
-    append_operations_queue(bank_transactions, operations_queue)
+    last_transactions = deepcopy(bank_transactions)
     transactions_by_day_interval = filter_out_transactions_by_day_interval(bank_transactions, start_day, end_day)
     bank_transactions[:] = transactions_by_day_interval
+    append_operations_queue(bank_transactions, last_transactions, operations_queue)
 
 
 def remove_transactions_by_type(bank_transactions, operations_queue, type):
-    append_operations_queue(bank_transactions, operations_queue)
+    last_transactions = deepcopy(bank_transactions)
     transactions_by_type = filter_out_transactions_by_type(bank_transactions, type)
     bank_transactions[:] = transactions_by_type
+    append_operations_queue(bank_transactions, last_transactions, operations_queue)
 
 
 def replace_transaction(bank_transactions, operations_queue, day, type, description, value):
-    append_operations_queue(bank_transactions, operations_queue)
+    last_transactions = deepcopy(bank_transactions)
     transaction_index = find_transaction(bank_transactions, day, type, description)
     if transaction_index != -1:
         set_value(bank_transactions[transaction_index], value)
+    append_operations_queue(bank_transactions, last_transactions, operations_queue)
 
 
 def get_transactions(bank_transactions):
@@ -96,11 +102,12 @@ def maximum_transaction(bank_transactions, type, day):
 
 
 def filter_transactions(bank_transactions, operations_queue, type, value):
-    append_operations_queue(bank_transactions, operations_queue)
+    last_transactions = deepcopy(bank_transactions)
     filtered_transactions = filter_transactions_by_type(bank_transactions, type)
     if value is not None:
         filtered_transactions = filter_transactions_by_value(filtered_transactions, '<', value)
     bank_transactions[:] = filtered_transactions
+    append_operations_queue(bank_transactions, last_transactions, operations_queue)
 
 
 def undo_last_operation(bank_transactions, operations_queue):

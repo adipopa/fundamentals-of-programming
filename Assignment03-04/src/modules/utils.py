@@ -31,18 +31,6 @@ def find_transaction(bank_transactions, day, type, description):
     return -1
 
 
-def filter_out_transactions_by_type(bank_transactions, type):
-    return [transaction for transaction in bank_transactions if get_type(transaction) != type]
-
-
-def filter_out_transactions_by_day(bank_transactions, day):
-    return [transaction for transaction in bank_transactions if get_day(transaction) != day]
-
-
-def filter_out_transactions_by_day_interval(bank_transactions, start_day, end_day):
-    return [transaction for transaction in bank_transactions if get_day(transaction) < start_day or get_day(transaction) > end_day]
-
-
 def filter_transactions_by_type(bank_transactions, type):
     return [transaction for transaction in bank_transactions if get_type(transaction) == type]
 
@@ -54,3 +42,15 @@ def filter_transactions_by_value(bank_transactions, operand, value):
         return [transaction for transaction in bank_transactions if get_value(transaction) == value]
     elif operand == '>':
         return [transaction for transaction in bank_transactions if get_value(transaction) > value]
+
+
+def filter_out_transactions_by_type(bank_transactions, type):
+    return [transaction for transaction in bank_transactions if get_type(transaction) != type]
+
+
+def filter_out_transactions_by_day(bank_transactions, day):
+    return [transaction for transaction in bank_transactions if get_day(transaction) != day]
+
+
+def filter_out_transactions_by_day_interval(bank_transactions, start_day, end_day):
+    return [transaction for transaction in bank_transactions if get_day(transaction) < start_day or get_day(transaction) > end_day]

@@ -2,8 +2,8 @@
 Module for handling user actions and printing values to the console.
 """
 
-from modules.business import *
 from modules.validation import *
+from modules.business import *
 
 
 def ui_add_transaction(bank_transactions, operations_queue, params):
@@ -17,8 +17,8 @@ def ui_add_transaction(bank_transactions, operations_queue, params):
             add_transaction(bank_transactions, operations_queue, value, type, description)
             print("-bank-account: Added " + format_transaction_type(type) + " transaction for today of " +
                   str(value) + " RON with the '" + description + "' description.\n")
-        except TypeError as te:
-            print(str(te))
+        except TypeError as type_error:
+            print(str(type_error))
     except IndexError:
         print("-bank-account: Invalid syntax, please use: add <value> <type> <description>. For more information type 'help'.\n")
 
@@ -35,8 +35,8 @@ def ui_insert_transaction(bank_transactions, operations_queue, params):
             insert_transaction(bank_transactions, operations_queue, day, value, type, description)
             print("-bank-account: Inserted " + format_transaction_type(type) + " transaction to day " + str(day) + " of " +
                   str(value) + " RON with the '" + description + "' description.\n")
-        except TypeError as te:
-            print(str(te))
+        except TypeError as type_error:
+            print(str(type_error))
     except IndexError:
         print("-bank-account: Invalid syntax, please use: insert <day> <value> <type> <description>. For more information type 'help'.\n")
 
@@ -53,10 +53,10 @@ def ui_remove_transactions(bank_transactions, operations_queue, params):
                     type = resolve_type(params[0])
                     remove_transactions_by_type(bank_transactions, operations_queue, type)
                     print("-bank-account: Removed all " + format_transaction_type(type) + " transactions.\n")
-                except TypeError as te:
-                    print(str(te))
-            except TypeError as te:
-                print(str(te))
+                except TypeError as type_error:
+                    print(str(type_error))
+            except TypeError as type_error:
+                print(str(type_error))
         elif len(params) == 3:
             try:
                 start_day = resolve_day(params[0])
@@ -69,8 +69,8 @@ def ui_remove_transactions(bank_transactions, operations_queue, params):
                     return
                 remove_transactions_by_day_interval(bank_transactions, operations_queue, start_day, end_day)
                 print("-bank-account: Removed all transactions between day " + str(start_day) + " and day " + str(end_day) + ".\n")
-            except TypeError as te:
-                print(str(te))
+            except TypeError as type_error:
+                print(str(type_error))
         else:
             raise IndexError
     except IndexError:
@@ -92,8 +92,8 @@ def ui_replace_transaction(bank_transactions, operations_queue, params):
             replace_transaction(bank_transactions, operations_queue, day, type, description, value)
             print("-bank-account: Replaced the amount for the " + format_transaction_type(type) + " transaction having the '" +
                   description + "' description from day " + str(day) + " with " + str(value) + " RON.\n")
-        except TypeError as te:
-            print(str(te))
+        except TypeError as type_error:
+            print(str(type_error))
     except IndexError:
         print("-bank-account: Invalid syntax, please use: replace <day> <type> <description> with <value>. For more information type 'help'.\n")
 
@@ -123,8 +123,8 @@ def ui_list_transactions(bank_transactions, params):
                     return
                 print("-bank-account: List of this month's " + format_transaction_type(type) + " transactions:")
                 ui_print_transactions(transactions_by_type)
-            except TypeError as te:
-                print(str(te))
+            except TypeError as type_error:
+                print(str(type_error))
         elif len(params) == 2:
             if params[0] in operands:
                 try:
@@ -136,15 +136,15 @@ def ui_list_transactions(bank_transactions, params):
                         return
                     print("-bank-account: List of this month's transactions with value " + operand + " " + str(value) + ":")
                     ui_print_transactions(transactions_by_value)
-                except TypeError as te:
-                    print(str(te))
+                except TypeError as type_error:
+                    print(str(type_error))
             elif params[0] == 'balance':
                 try:
                     day = resolve_day(params[1])
                     balance = calculate_balance_on_day(bank_transactions, day)
                     print("-bank-account: Your account's balance on day " + str(day) + ": " + str(balance) + " RON.\n")
-                except TypeError as te:
-                    print(str(te))
+                except TypeError as type_error:
+                    print(str(type_error))
             else:
                 print("-bank-account: Invalid syntax, please use: list / list <type> / list [ < | = | > ] <value> / list balance <day>. For more information "
                       "type 'help'.\n")
@@ -164,8 +164,8 @@ def ui_sum_transactions(bank_transactions, params):
             type = resolve_type(params[0])
             transactions_sum = sum_transactions(bank_transactions, type)
             print("-bank-account: The sum of all the " + format_transaction_type(type) + " transactions: " + str(transactions_sum) + " RON.\n")
-        except TypeError as te:
-            print(str(te))
+        except TypeError as type_error:
+            print(str(type_error))
     except IndexError:
         print("-bank-account: Invalid syntax, please use: sum <type>. For more information type 'help'.\n")
 
@@ -183,8 +183,8 @@ def ui_max_transaction(bank_transactions, params):
                 return
             print("-bank-account: The maximum " + format_transaction_type(type) + " transaction on day " + str(day) +
                   " is:\n" + build_transaction_message(max_transaction) + "\n")
-        except TypeError as te:
-            print(str(te))
+        except TypeError as type_error:
+            print(str(type_error))
     except IndexError:
         print("-bank-account: Invalid syntax, please use: max <type> <day>. For more information type 'help'.\n")
 
@@ -196,8 +196,8 @@ def ui_filter_transactions(bank_transactions, operations_queue, params):
                 type = resolve_type(params[0])
                 filter_transactions(bank_transactions, operations_queue, type, None)
                 print("-bank-account: Kept only the " + format_transaction_type(type) + " transactions.\n")
-            except TypeError as te:
-                print(str(te))
+            except TypeError as type_error:
+                print(str(type_error))
         elif len(params) == 2:
             try:
                 type = resolve_type(params[0])
@@ -205,8 +205,8 @@ def ui_filter_transactions(bank_transactions, operations_queue, params):
                 filter_transactions(bank_transactions, operations_queue, type, value)
                 print("-bank-account: Kept only the " + format_transaction_type(type) + " transactions having" +
                       " an amount of money smaller than " + str(value) + " RON.\n")
-            except TypeError as te:
-                print(str(te))
+            except TypeError as type_error:
+                print(str(type_error))
         else:
             raise IndexError
     except IndexError:
