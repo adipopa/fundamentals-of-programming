@@ -1,3 +1,8 @@
+"""
+Module that handles the validation of certain user inputs.
+"""
+
+
 def resolve_day(day_argument):
     error_message = "-bank-account: add: Argument <day> must be an integer with value between 1 and 31.\n"
     try:

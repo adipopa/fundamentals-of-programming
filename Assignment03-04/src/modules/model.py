@@ -1,3 +1,8 @@
+"""
+Module that handles the model and state of a transaction.
+"""
+
+
 def get_day(transaction):
     return transaction['day']
 
@@ -37,11 +42,3 @@ def build_transaction(day, value, type, description):
     set_type(transaction, type)
     set_description(transaction, description)
     return transaction
-
-
-def find_transaction(bank_transactions, day, type, description):
-    for index in range(len(bank_transactions)):
-        transaction = bank_transactions[index]
-        if get_day(transaction) == day and get_type(transaction) == type and get_description(transaction) == description:
-            return index
-    return -1
