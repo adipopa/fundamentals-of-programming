@@ -221,7 +221,7 @@ def numbers_with_same_modulus(complex_numbers_dictionary):
     print_dictionary(complex_numbers_dictionary, start_index, start_index + max_sequence_length)
 
 
-def ui_read_dictionary(complex_numbers_dictionary):
+def  ui_read_dictionary(complex_numbers_dictionary):
     """
     The function reads an input from the console and adds the built complex number to
     the complex_numbers_dictionary dictionary.
