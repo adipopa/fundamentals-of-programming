@@ -18,9 +18,10 @@ class StudentRepository:
         Method for adding a student to the repo -> auto increments the ID
         student - An instance of Student
         """
-        student.set_student_id(self.__count)
+        if not student.get_student_id():
+            student.set_student_id(self.__count)
+            self.__count += 1
         self.__students.append(student)
-        self.__count += 1
 
     def get(self, student_id):
         """
@@ -35,7 +36,7 @@ class StudentRepository:
         Method for retrieving all the students
         output: An array of all the students in the repo
         """
-        return self.__students
+        return sorted(self.__students, key=lambda student: student.get_student_id())
 
     def get_by_group(self, group):
         """
@@ -48,7 +49,9 @@ class StudentRepository:
     def update(self, student_id, student):
         self.__students[self.find_student_index(student_id)] = student
 
-    def delete(self, student_id):
+    def delete(self, student_id, should_decrement):
+        if should_decrement:
+            self.__count -= 1
         del self.__students[self.find_student_index(student_id)]
 
     def find_student_index(self, student_id):

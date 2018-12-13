@@ -3,11 +3,14 @@ from domain.grade import Grade
 
 
 class GradeValidator:
+    """
+    Grade validator class
+    """
 
     def validate(self, grade):
         """
-        Validate if provided Client instance is valid
-        client - Instance of Client type
+        Validate if provided Grade instance is valid
+        grade - Instance of Grade type
         Return List of validation errors. An empty list if instance is valid.
         """
         if not isinstance(grade, Grade):

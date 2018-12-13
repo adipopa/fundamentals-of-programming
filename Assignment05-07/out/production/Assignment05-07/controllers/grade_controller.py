@@ -1,11 +1,24 @@
+from datetime import date
+
 from domain.grade import Grade
+
+from utils.helper import Helper
+intersection = Helper.intersection
+average_grade_from_list = Helper.average_grade_from_list
 
 
 class GradeController:
+    """
+    Grade controller class
+    """
 
     def __init__(self, grade_validator, grade_repository, student_repository, assignment_repository):
         """
-        Write specification here
+        Constructor for grade controller class
+        grade_validator - The grade validator for validating a grade
+        grade_repository - The grade repository for CRUD operations on grades
+        student_repository - The student repository for CRUD operations on students
+        assignment_repository - The assignment repository for CRUD operations on assignments
         """
         self.__grade_validator = grade_validator
         self.__grade_repository = grade_repository
@@ -14,7 +27,9 @@ class GradeController:
 
     def give_assignment(self, assignment_id, student_id):
         """
-        Write specification here
+        Method for giving an assignment (empty grade) to a student
+        assignment_id - The assignment's ID (integer)
+        student_id - The student's ID (integer)
         """
         grade = Grade(assignment_id, student_id, None)
         self.__grade_validator.validate(grade)
@@ -22,30 +37,102 @@ class GradeController:
 
     def give_assignment_to_group(self, assignment_id, group):
         """
-        Write specification here
+        Method for giving an assignment (empty grade) to a group of students
+        assignment_id - The assignment's ID (integer)
+        group - A group of students (integer)
         """
         for student in self.__student_repository.get_by_group(group):
             self.give_assignment(assignment_id, student.get_student_id())
 
-    def retrieve_ungraded_assignments_by_student(self, student_id):
-        """
-        Write specification here
-        """
-        ungraded_assignments = []
-        for grade in self.__grade_repository.get_ungraded_by_student(student_id):
-            ungraded_assignments.append(self.__assignment_repository.get(grade.get_assignment_id()))
-        return ungraded_assignments
-
-    def retrieve_students_by_assignment(self, assignment_id):
-        students = []
-        for grade in self.__grade_repository.get_by_assignment(assignment_id):
-            students.append(self.__student_repository.get(grade.get_student_id()))
-        return sorted(students, key=lambda student: student.get_name())
-
     def grade_student(self, student_id, assignment_id, grade_value):
         """
-        Write specification here
+        Method for grading a student (update an empty grade)
+        student_id - The student's ID (integer)
+        assignment_id - The assignment's ID (integer)
+        grade_value - The grade's value (integer)
         """
         grade = Grade(assignment_id, student_id, grade_value)
         self.__grade_validator.validate(grade)
         self.__grade_repository.update(assignment_id, student_id, grade)
+
+    def delete_grade(self, assignment_id, student_id):
+        """
+        Method for giving an assignment (empty grade)
+        assignment_id - The assignment's ID (integer)
+        student_id - The student's ID (integer)
+        """
+        self.__grade_repository.delete(assignment_id, student_id)
+
+    def delete_grade_by_group(self, assignment_id, group):
+        """
+        Method for deleting an assignment (empty grade) for a group of students
+        assignment_id - The assignment's ID (integer)
+        group - A group of students (integer)
+        """
+        for student in self.__student_repository.get_by_group(group):
+            self.delete_grade(assignment_id, student.get_student_id())
+
+    def retrieve_grades(self):
+        """
+        Method for retrieving all students
+        output: an array of students from the repository
+        """
+        return self.__grade_repository.get_all()
+
+    def retrieve_ungraded_assignments_by_student(self, student_id):
+        """
+        Method for retrieving all the ungraded assignments for a given student
+        output: an array of assignments from the repository
+        """
+        grades_by_student = self.__grade_repository.get_by_student(student_id)
+        grades_by_grade = self.__grade_repository.get_by_grade(is_graded=False)
+        ungraded_assignments = []
+        for grade in intersection(grades_by_student, grades_by_grade):
+            ungraded_assignments.append(self.__assignment_repository.get(grade.get_assignment_id()))
+        return ungraded_assignments
+
+    def retrieve_students_by_assignment(self, assignment_id):
+        """
+        Method for retrieving all students by a given assignment
+        output: an array of students from the repository
+        """
+        grades_by_assignment = self.__grade_repository.get_by_assignment(assignment_id)
+        students_by_assignment = []
+        for grade in grades_by_assignment:
+            students_by_assignment.append(self.__student_repository.get(grade.get_student_id()))
+        return sorted(students_by_assignment, key=lambda student: student.get_name())
+
+    def retrieve_late_students(self):
+        late_students = []
+        for student in self.__student_repository.get_all():
+            ungraded_assignments = self.retrieve_ungraded_assignments_by_student(student.get_student_id())
+            for assignment in ungraded_assignments:
+                if assignment.get_deadline() < date.today():
+                    late_students.append(student)
+                    break
+        return late_students
+
+    def retrieve_best_students(self):
+        best_students = self.__student_repository.get_all()
+        return sorted(best_students, key=lambda student: self.average_student_grade(student.get_student_id()), reverse=True)
+
+    def retrieve_assignments_by_average_grade(self):
+        assignments_by_average_grade = []
+        for assignment in self.__assignment_repository.get_all():
+            grades_by_assignment = self.__grade_repository.get_by_assignment(assignment.get_assignment_id())
+            grades_by_grade = self.__grade_repository.get_by_grade(is_graded=True)
+            if len(intersection(grades_by_assignment, grades_by_grade)) != 0:
+                assignments_by_average_grade.append(assignment)
+        return sorted(assignments_by_average_grade, key=lambda assignment: self.average_assignment_grade(assignment.get_assignment_id()), reverse=True)
+
+    def average_student_grade(self, student_id):
+        grades_by_student = self.__grade_repository.get_by_student(student_id)
+        grades_by_grade = self.__grade_repository.get_by_grade(is_graded=True)
+        grades = intersection(grades_by_student, grades_by_grade)
+        return average_grade_from_list(grades)
+
+    def average_assignment_grade(self, assignment_id):
+        grades_by_assignment = self.__grade_repository.get_by_assignment(assignment_id)
+        grades_by_grade = self.__grade_repository.get_by_grade(is_graded=True)
+        grades = intersection(grades_by_assignment, grades_by_grade)
+        return average_grade_from_list(grades)

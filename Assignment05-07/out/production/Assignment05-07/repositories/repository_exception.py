@@ -19,5 +19,5 @@ class RepositoryException(Exception):
     def __str__(self):
         result = ""
         for message in self.messages:
-            result += "Repository ERROR: " + message + "\n"
+            result += "Repository ERROR: " + message
         return result

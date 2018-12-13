@@ -36,15 +36,15 @@ class TestGradeRepository(TestCase):
 
     def test_get_by_assignment(self):
         self.__grade_repository.add(self.__grade)
-        self.assertEqual(self.__grade_repository.get_by_assignment(3), self.__grade)
+        self.assertEqual(self.__grade_repository.get_by_assignment(3)[0], self.__grade)
 
     def test_get_by_student(self):
         self.__grade_repository.add(self.__grade)
-        self.assertEqual(self.__grade_repository.get_by_student(7), self.__grade)
+        self.assertEqual(self.__grade_repository.get_by_student(7)[0], self.__grade)
 
     def test_get_by_grade(self):
         self.__grade_repository.add(self.__grade)
-        self.assertEqual(self.__grade_repository.get_by_grade(is_graded=False), self.__grade)
+        self.assertEqual(self.__grade_repository.get_by_grade(is_graded=False)[0], self.__grade)
 
     def test_find_grade_index(self):
         self.__grade_repository.add(self.__grade)

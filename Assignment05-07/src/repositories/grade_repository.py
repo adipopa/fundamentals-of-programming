@@ -17,7 +17,7 @@ class GradeRepository:
         Method for adding a grade to the repo
         grade - An instance of Grade
         """
-        if not any(grd == grade for grd in self.__grades):
+        if not any(old_grade == grade for old_grade in self.__grades):
             self.__grades.append(grade)
 
     def update(self, assignment_id, student_id, grade):
@@ -37,7 +37,7 @@ class GradeRepository:
         Method for retrieving all the grades
         output: An array of all the grades in the repo
         """
-        return self.__grades
+        return sorted(self.__grades, key=lambda grade: (grade.get_assignment_id(), grade.get_student_id()))
 
     def get_by_assignment(self, assignment_id):
         return [grade for grade in self.__grades if grade.get_assignment_id() == assignment_id]

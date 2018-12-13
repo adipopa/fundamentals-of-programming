@@ -19,5 +19,5 @@ class ValidationException(Exception):
     def __str__(self):
         result = ""
         for message in self.messages:
-            result += "Validation ERROR: " + message + "\n"
+            result += "Validation ERROR: " + message
         return result

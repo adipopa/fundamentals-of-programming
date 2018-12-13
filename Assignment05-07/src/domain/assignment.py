@@ -27,7 +27,7 @@ class Assignment:
         return self.__deadline
 
     def __str__(self):
-        return str(self.__assignment_id) + ' - ' + self.__description + ', deadline: ' + self.__deadline.strftime('%d, %b %Y')
+        return 'ID: ' + str(self.__assignment_id) + ', description: ' + self.__description + ', deadline: ' + self.__deadline.strftime('%d, %b %Y')
 
     def __repr__(self):
         return str(self)

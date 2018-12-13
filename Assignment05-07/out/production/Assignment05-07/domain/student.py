@@ -1,4 +1,7 @@
 class Student:
+    """
+    Student domain class
+    """
 
     def __init__(self, student_id, name, group):
         self.__student_id = student_id

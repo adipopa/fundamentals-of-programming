@@ -1,6 +1,15 @@
 class Assignment:
+    """
+    Assignment domain class
+    """
 
     def __init__(self, assignment_id, description, deadline):
+        """
+        Constructor for assignment domain class
+        assignment_id - The assignment's ID (integer)
+        description - The assignment's description (string)
+        deadline - The assignment's deadline (consisting of a date)
+        """
         self.__assignment_id = assignment_id
         self.__description = description
         self.__deadline = deadline
@@ -18,7 +27,7 @@ class Assignment:
         return self.__deadline
 
     def __str__(self):
-        return str(self.__assignment_id) + ' - ' + self.__description + ', deadline: ' + self.__deadline.strftime('%d, %b %Y')
+        return 'ID: ' + str(self.__assignment_id) + ', description: ' + self.__description + ', deadline: ' + self.__deadline.strftime('%d, %b %Y')
 
     def __repr__(self):
         return str(self)

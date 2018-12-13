@@ -55,6 +55,30 @@ class GradeController:
         self.__grade_validator.validate(grade)
         self.__grade_repository.update(assignment_id, student_id, grade)
 
+    def delete_grade(self, assignment_id, student_id):
+        """
+        Method for giving an assignment (empty grade)
+        assignment_id - The assignment's ID (integer)
+        student_id - The student's ID (integer)
+        """
+        self.__grade_repository.delete(assignment_id, student_id)
+
+    def delete_grade_by_group(self, assignment_id, group):
+        """
+        Method for deleting an assignment (empty grade) for a group of students
+        assignment_id - The assignment's ID (integer)
+        group - A group of students (integer)
+        """
+        for student in self.__student_repository.get_by_group(group):
+            self.delete_grade(assignment_id, student.get_student_id())
+
+    def retrieve_grades(self):
+        """
+        Method for retrieving all students
+        output: an array of students from the repository
+        """
+        return self.__grade_repository.get_all()
+
     def retrieve_ungraded_assignments_by_student(self, student_id):
         """
         Method for retrieving all the ungraded assignments for a given student
@@ -72,7 +96,7 @@ class GradeController:
         Method for retrieving all students by a given assignment
         output: an array of students from the repository
         """
-        grades_by_assignment = self.__grade_repository.get_by_assignment(assignment_id);
+        grades_by_assignment = self.__grade_repository.get_by_assignment(assignment_id)
         students_by_assignment = []
         for grade in grades_by_assignment:
             students_by_assignment.append(self.__student_repository.get(grade.get_student_id()))

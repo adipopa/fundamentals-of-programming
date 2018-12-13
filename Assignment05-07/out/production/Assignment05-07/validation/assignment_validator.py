@@ -4,11 +4,14 @@ from domain.assignment import Assignment
 
 
 class AssignmentValidator:
+    """
+    Assignment validator class
+    """
 
     def validate(self, assignment):
         """
-        Validate if provided Client instance is valid
-        client - Instance of Client type
+        Validate if provided Assignment instance is valid
+        assignment - Instance of Assignment type
         Return List of validation errors. An empty list if instance is valid.
         """
         if not isinstance(assignment, Assignment):

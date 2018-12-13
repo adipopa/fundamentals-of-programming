@@ -18,9 +18,10 @@ class AssignmentRepository:
         Method for adding an assignment to the repo -> auto increments the ID
         assignment - An instance of Assignment
         """
-        assignment.set_assignment_id(self.__count)
+        if not assignment.get_assignment_id():
+            assignment.set_assignment_id(self.__count)
+            self.__count += 1
         self.__assignments.append(assignment)
-        self.__count += 1
 
     def get(self, assignment_id):
         """
@@ -35,7 +36,7 @@ class AssignmentRepository:
         Method for retrieving all the assignments
         output: An array of all the assignments in the repo
         """
-        return self.__assignments
+        return sorted(self.__assignments, key=lambda assignment: assignment.get_assignment_id())
 
     def update(self, assignment_id, assignment):
         """
@@ -45,11 +46,13 @@ class AssignmentRepository:
         """
         self.__assignments[self.find_assignment_index(assignment_id)] = assignment
 
-    def delete(self, assignment_id):
+    def delete(self, assignment_id, should_decrement):
         """
         Method for deleting an assignment based on ID
         assignment_id - The assignment's ID (integer)
         """
+        if should_decrement:
+            self.__count -= 1
         del self.__assignments[self.find_assignment_index(assignment_id)]
 
     def find_assignment_index(self, assignment_id):

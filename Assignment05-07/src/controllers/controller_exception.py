@@ -18,5 +18,5 @@ class ControllerException(Exception):
     def __str__(self):
         result = ""
         for message in self.messages:
-            result += "Controller ERROR: " + message + "\n"
+            result += "Controller ERROR: " + message
         return result

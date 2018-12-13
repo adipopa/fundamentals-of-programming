@@ -2,29 +2,56 @@ from repositories.repository_exception import RepositoryException
 
 
 class StudentRepository:
+    """
+    Student repository class
+    """
 
     def __init__(self):
+        """
+        Constructor for student repository class that sets up the array of students in the repo
+        """
         self.__students = []
         self.__count = 1
 
     def add(self, student):
-        student.set_student_id(self.__count)
+        """
+        Method for adding a student to the repo -> auto increments the ID
+        student - An instance of Student
+        """
+        if not student.get_student_id():
+            student.set_student_id(self.__count)
+            self.__count += 1
         self.__students.append(student)
-        self.__count += 1
 
     def get(self, student_id):
+        """
+        Method for retrieving a student based on it's ID
+        student_id - The student's ID (integer)
+        output: The student with the given ID
+        """
         return self.__students[self.find_student_index(student_id)]
 
     def get_all(self):
-        return self.__students
+        """
+        Method for retrieving all the students
+        output: An array of all the students in the repo
+        """
+        return sorted(self.__students, key=lambda student: student.get_student_id())
 
     def get_by_group(self, group):
+        """
+        Method for retrieving all the students from a given group
+        group - The group of students (integer)
+        output: An array of assignments part of a given group
+        """
         return [student for student in self.__students if student.get_group() == group]
 
     def update(self, student_id, student):
         self.__students[self.find_student_index(student_id)] = student
 
-    def delete(self, student_id):
+    def delete(self, student_id, should_decrement):
+        if should_decrement:
+            self.__count -= 1
         del self.__students[self.find_student_index(student_id)]
 
     def find_student_index(self, student_id):
