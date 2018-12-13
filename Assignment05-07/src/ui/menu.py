@@ -56,7 +56,7 @@ class MenuUI:
                 except ControllerException as controller_error:
                     print(str(controller_error))
             elif user_option == '0':
-                keep_alive = True
+                keep_alive = False
             else:
                 print("Invalid option!")
 

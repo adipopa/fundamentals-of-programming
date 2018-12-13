@@ -25,5 +25,8 @@ class TestAssignmentController(TestCase):
     def test_delete_assignment(self):
         pass
 
+    def test_get_assignment(self):
+        pass
+
     def test_retrieve_assignments(self):
         pass
