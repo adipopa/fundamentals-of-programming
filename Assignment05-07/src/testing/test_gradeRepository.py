@@ -1,7 +1,7 @@
 from unittest import TestCase
 
 from domain.grade import Grade
-from repositories.grade_repository import GradeRepository
+from repositories.inmemory.grade_repository import GradeRepository
 
 
 class TestGradeRepository(TestCase):

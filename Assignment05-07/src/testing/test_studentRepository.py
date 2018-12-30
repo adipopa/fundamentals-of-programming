@@ -1,7 +1,7 @@
 from unittest import TestCase
 
 from domain.student import Student
-from repositories.student_repository import StudentRepository
+from repositories.inmemory.student_repository import StudentRepository
 
 
 class TestStudentRepository(TestCase):
@@ -35,7 +35,7 @@ class TestStudentRepository(TestCase):
 
     def test_delete(self):
         self.__student_repository.add(self.__student)
-        self.__student_repository.delete(1)
+        self.__student_repository.delete(1, should_decrement=False)
         self.assertEqual(len(self.__student_repository.get_all()), 0)
 
     def test_find_student_index(self):

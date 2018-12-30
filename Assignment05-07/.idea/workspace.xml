@@ -7,32 +7,216 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a5b786e0-610d-40bf-8429-d2cca33f4060" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../tests/andromeda-strain/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tests/andromeda-strain/src/controllers/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tests/andromeda-strain/src/controllers/disease_controller.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tests/andromeda-strain/src/domain/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tests/andromeda-strain/src/domain/disease.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tests/andromeda-strain/src/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tests/andromeda-strain/src/repositories/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tests/andromeda-strain/src/repositories/disease_repository.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tests/andromeda-strain/src/ui/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tests/andromeda-strain/src/ui/console.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tests/andromeda-strain/src/validators/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tests/exam/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tests/exam/src/controllers/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tests/exam/src/controllers/student_controller.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tests/exam/src/domain/student.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tests/exam/src/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tests/exam/src/repositories/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tests/exam/src/repositories/student_repository.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tests/exam/src/students.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tests/exam/src/ui/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tests/exam/src/ui/console.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tests/exam/src/validators/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tests/exam/src/validators/student_validator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assignment08/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment08/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assignment08/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment08/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.coverage" beforeDir="false" afterPath="$PROJECT_DIR$/src/.coverage" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/testing/test_assignmentController.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/testing/test_assignmentController.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/testing/test_assignmentRepository.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/testing/test_assignmentRepository.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/testing/test_gradeRepository.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/testing/test_gradeRepository.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/testing/test_studentRepository.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/testing/test_studentRepository.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/.idea/dictionaries/adipopa.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/Assignment08.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment05-07/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment05-07/controllers/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment05-07/controllers/assignment_controller.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment05-07/controllers/controller_exception.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment05-07/controllers/grade_controller.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment05-07/controllers/history_controller.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment05-07/controllers/student_controller.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment05-07/domain/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment05-07/domain/assignment.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment05-07/domain/grade.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment05-07/domain/operation.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment05-07/domain/student.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment05-07/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment05-07/repositories/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment05-07/repositories/assignment_repository.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment05-07/repositories/grade_repository.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment05-07/repositories/repository_exception.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment05-07/repositories/student_repository.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment05-07/testing/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment05-07/testing/test_assignment.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment05-07/testing/test_assignmentController.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment05-07/testing/test_assignmentRepository.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment05-07/testing/test_assignmentValidator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment05-07/testing/test_grade.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment05-07/testing/test_gradeController.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment05-07/testing/test_gradeRepository.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment05-07/testing/test_gradeValidator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment05-07/testing/test_helper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment05-07/testing/test_student.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment05-07/testing/test_studentController.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment05-07/testing/test_studentRepository.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment05-07/testing/test_studentValidator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment05-07/ui/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment05-07/ui/menu.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment05-07/ui/menus/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment05-07/ui/menus/give_assignments.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment05-07/ui/menus/grade_student.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment05-07/ui/menus/manage_lists.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment05-07/ui/menus/statistics.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment05-07/utils/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment05-07/utils/generator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment05-07/utils/helper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment05-07/validation/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment05-07/validation/assignment_validator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment05-07/validation/grade_validator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment05-07/validation/student_validator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment05-07/validation/validation_exception.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment08/.coverage" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment08/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment08/controllers/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment08/controllers/assignment_controller.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment08/controllers/controller_exception.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment08/controllers/grade_controller.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment08/controllers/history_controller.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment08/controllers/student_controller.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment08/domain/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment08/domain/assignment.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment08/domain/grade.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment08/domain/operation.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment08/domain/student.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment08/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment08/repositories/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment08/repositories/binaryfile/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment08/repositories/binaryfile/assignment_repository.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment08/repositories/binaryfile/grade_repository.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment08/repositories/binaryfile/student_repository.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment08/repositories/inmemory/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment08/repositories/inmemory/assignment_repository.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment08/repositories/inmemory/grade_repository.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment08/repositories/inmemory/student_repository.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment08/repositories/repository_exception.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment08/repositories/textfile/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment08/repositories/textfile/assignment_repository.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment08/repositories/textfile/grade_repository.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment08/repositories/textfile/student_repository.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment08/settings.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment08/testing/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment08/testing/test_assignment.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment08/testing/test_assignmentController.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment08/testing/test_assignmentRepository.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment08/testing/test_assignmentValidator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment08/testing/test_grade.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment08/testing/test_gradeController.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment08/testing/test_gradeRepository.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment08/testing/test_gradeValidator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment08/testing/test_helper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment08/testing/test_student.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment08/testing/test_studentController.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment08/testing/test_studentRepository.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment08/testing/test_studentValidator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment08/ui/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment08/ui/menu.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment08/ui/menus/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment08/ui/menus/give_assignments.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment08/ui/menus/grade_student.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment08/ui/menus/manage_lists.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment08/ui/menus/statistics.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment08/utils/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment08/utils/generator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment08/utils/helper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment08/validation/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment08/validation/assignment_validator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment08/validation/grade_validator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment08/validation/student_validator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/production/Assignment08/validation/validation_exception.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/test/Assignment05-07/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/test/Assignment05-07/test_assignment.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/test/Assignment05-07/test_assignmentController.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/test/Assignment05-07/test_assignmentRepository.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/test/Assignment05-07/test_assignmentValidator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/test/Assignment05-07/test_grade.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/test/Assignment05-07/test_gradeController.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/test/Assignment05-07/test_gradeRepository.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/test/Assignment05-07/test_gradeValidator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/test/Assignment05-07/test_helper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/test/Assignment05-07/test_student.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/test/Assignment05-07/test_studentController.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/test/Assignment05-07/test_studentRepository.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/test/Assignment05-07/test_studentValidator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/test/Assignment08/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/test/Assignment08/test_assignment.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/test/Assignment08/test_assignmentController.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/test/Assignment08/test_assignmentRepository.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/test/Assignment08/test_assignmentValidator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/test/Assignment08/test_grade.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/test/Assignment08/test_gradeController.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/test/Assignment08/test_gradeRepository.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/test/Assignment08/test_gradeValidator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/test/Assignment08/test_helper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/test/Assignment08/test_student.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/test/Assignment08/test_studentController.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/test/Assignment08/test_studentRepository.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/out/test/Assignment08/test_studentValidator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/src/.coverage" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/src/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/src/assignments.pickle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/src/assignments.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/src/controllers/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/src/controllers/assignment_controller.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/src/controllers/controller_exception.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/src/controllers/grade_controller.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/src/controllers/history_controller.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/src/controllers/student_controller.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/src/domain/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/src/domain/assignment.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/src/domain/grade.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/src/domain/operation.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/src/domain/student.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/src/grades.pickle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/src/grades.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/src/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/src/repositories/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/src/repositories/binaryfile/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/src/repositories/binaryfile/assignment_binary_repository.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/src/repositories/binaryfile/grade_binary_repository.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/src/repositories/binaryfile/student_binary_repository.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/src/repositories/inmemory/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/src/repositories/inmemory/assignment_repository.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/src/repositories/inmemory/grade_repository.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/src/repositories/inmemory/student_repository.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/src/repositories/repository_exception.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/src/repositories/textfile/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/src/repositories/textfile/assignment_text_repository.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/src/repositories/textfile/grade_text_repository.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/src/repositories/textfile/student_text_repository.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/src/settings.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/src/students.pickle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/src/students.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/src/testing/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/src/testing/test_assignment.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/src/testing/test_assignmentController.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/src/testing/test_assignmentRepository.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/src/testing/test_assignmentValidator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/src/testing/test_grade.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/src/testing/test_gradeController.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/src/testing/test_gradeRepository.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/src/testing/test_gradeValidator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/src/testing/test_helper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/src/testing/test_student.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/src/testing/test_studentController.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/src/testing/test_studentRepository.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/src/testing/test_studentValidator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/src/ui/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/src/ui/menu.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/src/ui/menus/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/src/ui/menus/give_assignments.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/src/ui/menus/grade_student.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/src/ui/menus/manage_lists.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/src/ui/menus/statistics.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/src/utils/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/src/utils/generator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/src/utils/helper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/src/validation/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/src/validation/assignment_validator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/src/validation/grade_validator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/src/validation/student_validator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment08/src/validation/validation_exception.py" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,11 +226,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Assignment05_07$main.coverage" NAME="main Coverage Results" MODIFIED="1544686217823" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/Assignment05_07$main.coverage" NAME="main Coverage Results" MODIFIED="1546172292310" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/Assignment05_07$Unittests_in_test_student_py.coverage" NAME="Unittests in test_student.py Coverage Results" MODIFIED="1543448165694" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/testing" />
     <SUITE FILE_PATH="coverage/Assignment05_07$lab_assignments.coverage" NAME="main Coverage Results" MODIFIED="1542739747287" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/Assignment05_07$Unittests_in_test_assignment_py.coverage" NAME="Unittests in test_assignment.py Coverage Results" MODIFIED="1543448160491" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/testing" />
-    <SUITE FILE_PATH="coverage/Assignment05_07$Unitests_in_testing.coverage" NAME="Unitests in testing Coverage Results" MODIFIED="1544655367997" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Assignment05_07$Unitests_in_testing.coverage" NAME="Unitests in testing Coverage Results" MODIFIED="1546172287608" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="1729348664">
@@ -94,10 +278,10 @@
     <session id="21683783">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="33" />
+          <entry key="project.closed" value="34" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="6" />
-          <entry key="project.open.time.11" value="2" />
+          <entry key="project.open.time.11" value="3" />
           <entry key="project.open.time.12" value="2" />
           <entry key="project.open.time.13" value="3" />
           <entry key="project.open.time.15" value="3" />
@@ -108,7 +292,7 @@
           <entry key="project.open.time.22" value="2" />
           <entry key="project.open.time.29" value="1" />
           <entry key="project.open.time.3" value="2" />
-          <entry key="project.opened" value="33" />
+          <entry key="project.opened" value="34" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -191,8 +375,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/repositories/student_repository.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-431">
-              <caret line="31" column="65" selection-start-line="31" selection-start-column="55" selection-end-line="31" selection-end-column="65" />
+            <state relative-caret-position="184">
+              <caret line="28" column="47" lean-forward="true" selection-start-line="28" selection-start-column="47" selection-end-line="28" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -212,7 +396,7 @@
             <state relative-caret-position="2254">
               <caret line="98" column="87" selection-start-line="98" selection-start-column="87" selection-end-line="98" selection-end-column="87" />
               <folding>
-                <marker date="1544658456025" expanded="true" signature="2965:2971" ph="..." />
+                <marker date="1546093637683" expanded="true" signature="2965:2971" ph="..." />
               </folding>
             </state>
           </provider>
@@ -224,7 +408,7 @@
             <state relative-caret-position="598">
               <caret line="26" column="58" selection-start-line="26" selection-start-column="58" selection-end-line="26" selection-end-column="58" />
               <folding>
-                <marker date="1544657202482" expanded="true" signature="170:175" ph="..." />
+                <marker date="1546093637695" expanded="true" signature="170:175" ph="..." />
               </folding>
             </state>
           </provider>
@@ -377,9 +561,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="width" value="1191" />
-    <option name="height" value="1042" />
+    <option name="x" value="-10" />
+    <option name="width" value="1192" />
+    <option name="height" value="1043" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -435,6 +619,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -500,7 +685,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -695,13 +879,11 @@
       <workItem from="1545212050264" duration="1384000" />
       <workItem from="1545214571946" duration="2713000" />
       <workItem from="1545253504415" duration="148000" />
+      <workItem from="1546172220536" duration="80000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unitests_in_testing - 2018.12.06 at 01h 10m 21s.xml">
-      <configuration name="Unitests in testing" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unitests_in_testing - 2018.12.06 at 01h 15m 10s.xml">
       <configuration name="Unitests in testing" configurationId="tests" />
     </history-entry>
@@ -729,15 +911,18 @@
     <history-entry file="Unitests_in_testing - 2018.12.13 at 00h 56m 08s.xml">
       <configuration name="Unitests in testing" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unitests_in_testing - 2018.12.30 at 14h 18m 08s.xml">
+      <configuration name="Unitests in testing" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="129899000" />
+    <option name="totallyTimeSpent" value="129979000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1691" height="917" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1927563" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19521178" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -1112,7 +1297,7 @@
         <state relative-caret-position="2254">
           <caret line="98" column="87" selection-start-line="98" selection-start-column="87" selection-end-line="98" selection-end-column="87" />
           <folding>
-            <marker date="1544658456025" expanded="true" signature="2965:2971" ph="..." />
+            <marker date="1546093637683" expanded="true" signature="2965:2971" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1122,7 +1307,7 @@
         <state relative-caret-position="598">
           <caret line="26" column="58" selection-start-line="26" selection-start-column="58" selection-end-line="26" selection-end-column="58" />
           <folding>
-            <marker date="1544657202482" expanded="true" signature="170:175" ph="..." />
+            <marker date="1546093637695" expanded="true" signature="170:175" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1136,8 +1321,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/repositories/student_repository.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-431">
-          <caret line="31" column="65" selection-start-line="31" selection-start-column="55" selection-end-line="31" selection-end-column="65" />
+        <state relative-caret-position="184">
+          <caret line="28" column="47" lean-forward="true" selection-start-line="28" selection-start-column="47" selection-end-line="28" selection-end-column="47" />
         </state>
       </provider>
     </entry>
