@@ -37,7 +37,7 @@ class TestAssignmentRepository(TestCase):
 
     def test_delete(self):
         self.__assignment_repository.add(self.__assignment)
-        self.__assignment_repository.delete(1)
+        self.__assignment_repository.delete(1, should_decrement=False)
         self.assertEqual(len(self.__assignment_repository.get_all()), 0)
 
     def test_find_assignment_index(self):
