@@ -1,5 +1,7 @@
 from repositories.repository_exception import RepositoryException
 
+from structures.collection import *
+
 import pickle
 
 
@@ -12,7 +14,7 @@ class AssignmentBinaryRepository:
         """
         Constructor for assignment repository class that sets up the array of assignments in the repo
         """
-        self.__assignments = []
+        self.__assignments = Collection()
         self.__count = 1
         self.__filename = filename
 
@@ -26,7 +28,7 @@ class AssignmentBinaryRepository:
         if not assignment.get_assignment_id():
             assignment.set_assignment_id(self.__count)
             self.__count += 1
-        self.__assignments.append(assignment)
+        self.__assignments.add(assignment)
         self.save_assignments_to_binary()
 
     def get(self, assignment_id):
@@ -42,7 +44,7 @@ class AssignmentBinaryRepository:
         Method for retrieving all the assignments
         output: An array of all the assignments in the repo
         """
-        return sorted(self.__assignments, key=lambda assignment: assignment.get_assignment_id())
+        return gnome_sort(self.__assignments, sort_fn=lambda assignment_a, assignment_b: assignment_a.get_assignment_id() <= assignment_b.get_assignment_id())
 
     def update(self, assignment_id, assignment):
         """
@@ -89,10 +91,11 @@ class AssignmentBinaryRepository:
     def load_assignments_from_binary(self):
         try:
             file = open(self.__filename, 'rb')
-            self.__assignments = pickle.load(file)
+            for assignment in pickle.load(file):
+                self.__assignments.add(assignment)
             self.__count = self.__assignments[-1].get_assignment_id() + 1
         except EOFError:
-            self.__assignments = []
+            self.__assignments = Collection()
         except IOError as e:
             raise e
 

@@ -13,7 +13,7 @@ class Helper:
 
     @staticmethod
     def intersection(first_list, second_list):
-        return [value for value in first_list if value in second_list]
+        return [item for item in first_list if item in second_list]
 
     @staticmethod
     def average_grade_from_list(grades_list):

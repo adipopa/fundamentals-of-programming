@@ -1,5 +1,7 @@
 from repositories.repository_exception import RepositoryException
 
+from structures.collection import *
+
 
 class AssignmentRepository:
     """
@@ -10,7 +12,7 @@ class AssignmentRepository:
         """
         Constructor for assignment repository class that sets up the array of assignments in the repo
         """
-        self.__assignments = []
+        self.__assignments = Collection()
         self.__count = 1
 
     def add(self, assignment):
@@ -21,7 +23,7 @@ class AssignmentRepository:
         if not assignment.get_assignment_id():
             assignment.set_assignment_id(self.__count)
             self.__count += 1
-        self.__assignments.append(assignment)
+        self.__assignments.add(assignment)
 
     def get(self, assignment_id):
         """
@@ -36,7 +38,7 @@ class AssignmentRepository:
         Method for retrieving all the assignments
         output: An array of all the assignments in the repo
         """
-        return sorted(self.__assignments, key=lambda assignment: assignment.get_assignment_id())
+        return gnome_sort(self.__assignments, sort_fn=lambda assignment_a, assignment_b: assignment_a.get_assignment_id() <= assignment_b.get_assignment_id())
 
     def update(self, assignment_id, assignment):
         """

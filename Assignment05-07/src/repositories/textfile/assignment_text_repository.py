@@ -2,6 +2,8 @@ from repositories.repository_exception import RepositoryException
 
 from domain.assignment import Assignment
 
+from structures.collection import *
+
 from utils.helper import Helper
 
 
@@ -14,7 +16,7 @@ class AssignmentTextRepository:
         """
         Constructor for assignment repository class that sets up the array of assignments in the repo
         """
-        self.__assignments = []
+        self.__assignments = Collection()
         self.__count = 1
         self.__filename = filename
 
@@ -28,7 +30,7 @@ class AssignmentTextRepository:
         if not assignment.get_assignment_id():
             assignment.set_assignment_id(self.__count)
             self.__count += 1
-        self.__assignments.append(assignment)
+        self.__assignments.add(assignment)
         self.save_assignments()
 
     def get(self, assignment_id):
@@ -44,7 +46,7 @@ class AssignmentTextRepository:
         Method for retrieving all the assignments
         output: An array of all the assignments in the repo
         """
-        return sorted(self.__assignments, key=lambda assignment: assignment.get_assignment_id())
+        return gnome_sort(self.__assignments, sort_fn=lambda assignment_a, assignment_b: assignment_a.get_assignment_id() <= assignment_b.get_assignment_id())
 
     def update(self, assignment_id, assignment):
         """
@@ -94,7 +96,7 @@ class AssignmentTextRepository:
             line = file.readline().strip()
             while len(line) > 0:
                 line = line.split(',')
-                self.__assignments.append(Assignment(int(line[0]), line[1], Helper.resolve_date(line[2])))
+                self.__assignments.add(Assignment(int(line[0]), line[1], Helper.resolve_date(line[2])))
                 line = file.readline().strip()
             self.__count = self.__assignments[-1].get_assignment_id() + 1
             file.close()

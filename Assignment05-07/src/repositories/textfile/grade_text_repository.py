@@ -2,6 +2,8 @@ from repositories.repository_exception import RepositoryException
 
 from domain.grade import Grade
 
+from structures.collection import *
+
 
 class GradeTextRepository:
     """
@@ -12,7 +14,7 @@ class GradeTextRepository:
         """
         Constructor for grade repository class that sets up the array of grades in the repo
         """
-        self.__grades = []
+        self.__grades = Collection()
         self.__filename = filename
         self.load_grades()
 
@@ -22,7 +24,7 @@ class GradeTextRepository:
         grade - An instance of Grade
         """
         if not any(old_grade == grade for old_grade in self.__grades):
-            self.__grades.append(grade)
+            self.__grades.add(grade)
         self.save_grades()
 
     def update(self, assignment_id, student_id, grade):
@@ -44,16 +46,16 @@ class GradeTextRepository:
         Method for retrieving all the grades
         output: An array of all the grades in the repo
         """
-        return sorted(self.__grades, key=lambda grade: (grade.get_assignment_id(), grade.get_student_id()))
+        return gnome_sort(self.__grades, sort_fn=lambda grade_a, grade_b: grade_a.get_assignment_id() <= grade_b.get_assignment_id() and grade_a.get_student_id() <= grade_b.get_student_id())
 
     def get_by_assignment(self, assignment_id):
-        return [grade for grade in self.__grades if grade.get_assignment_id() == assignment_id]
+        return filter_items(self.__grades, filter_fn=lambda grade: grade.get_assignment_id() == assignment_id)
 
     def get_by_student(self, student_id):
-        return [grade for grade in self.__grades if grade.get_student_id() == student_id]
+        return filter_items(self.__grades, filter_fn=lambda grade: grade.get_student_id() == student_id)
 
     def get_by_grade(self, is_graded):
-        return [grade for grade in self.__grades if (grade.get_grade() is not None if is_graded else grade.get_grade() is None)]
+        return filter_items(self.__grades, filter_fn=lambda grade: (grade.get_grade() is not None if is_graded else grade.get_grade() is None))
 
     def find_grade_index(self, assignment_id, student_id):
         for index in range(len(self.__grades)):
@@ -71,7 +73,7 @@ class GradeTextRepository:
             line = file.readline().strip()
             while len(line) > 0:
                 line = line.split(',')
-                self.__grades.append(Grade(int(line[0]), int(line[1]), None if line[2] == 'None' else int(line[2])))
+                self.__grades.add(Grade(int(line[0]), int(line[1]), None if line[2] == 'None' else int(line[2])))
                 line = file.readline().strip()
             file.close()
         except IOError as e:
