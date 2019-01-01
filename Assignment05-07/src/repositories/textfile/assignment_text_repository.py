@@ -97,8 +97,8 @@ class AssignmentTextRepository:
             while len(line) > 0:
                 line = line.split(',')
                 self.__assignments.add(Assignment(int(line[0]), line[1], Helper.resolve_date(line[2])))
+                self.__count += 1
                 line = file.readline().strip()
-            self.__count = self.__assignments[-1].get_assignment_id() + 1
             file.close()
         except IOError as e:
             raise e

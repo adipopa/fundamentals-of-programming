@@ -52,10 +52,6 @@ try:
         student_repository = StudentRepository()
         assignment_repository = AssignmentRepository()
         grade_repository = GradeRepository()
-        generator = Generator(student_repository, assignment_repository, grade_repository)
-        generator.generate_students(100)
-        generator.generate_assignments(100)
-        generator.generate_grades(100)
     elif repository == 'textfiles' or repository == 'binaryfiles':
         students_filename = settings_file.readline().strip().replace('"', '').split('=')[1]
         assignments_filename = settings_file.readline().strip().replace('"', '').split('=')[1]
@@ -75,7 +71,19 @@ except IOError as e:
     raise e
 
 '''
-    3. We initialize the controllers
+    3. Call the generator methods for each of the student, assignment and grade repositories if none of the repositories
+    already contain some elements (applies for text / binary files).
+'''
+
+generator = Generator(student_repository, assignment_repository, grade_repository)
+
+if len(student_repository.get_all()) == 0 and len(assignment_repository.get_all()) == 0 and len(grade_repository.get_all()) == 0:
+    generator.generate_students(100)
+    generator.generate_assignments(100)
+    generator.generate_grades(100)
+
+'''
+    4. We initialize the controllers
         - The controller implements the program's 'operations'
         - Knows only about the repository layer
         - 'Talks' to the repository and UI using parameter passing and exceptions
@@ -86,7 +94,7 @@ grade_controller = GradeController(grade_validator, grade_repository, student_re
 history_controller = HistoryController(student_controller, assignment_controller, grade_controller)
 
 '''
-    4. Initialize the user interface
+    5. Initialize the user interface
         - The UI implements all user interactions
         - Only knows about the controller layer
         - Calls functions from the controller to implement program features
@@ -95,6 +103,6 @@ history_controller = HistoryController(student_controller, assignment_controller
 menu_ui = MenuUI(student_controller, assignment_controller, grade_controller, history_controller)
 
 '''
-    5. Start the application's user interface
+    6. Start the application's user interface
 '''
 menu_ui.run_main_menu()

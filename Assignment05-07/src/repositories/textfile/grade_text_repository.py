@@ -46,7 +46,8 @@ class GradeTextRepository:
         Method for retrieving all the grades
         output: An array of all the grades in the repo
         """
-        return gnome_sort(self.__grades, sort_fn=lambda grade_a, grade_b: grade_a.get_assignment_id() <= grade_b.get_assignment_id() and grade_a.get_student_id() <= grade_b.get_student_id())
+        sorted_by_id = gnome_sort(self.__grades, sort_fn=lambda grade_a, grade_b: grade_a.get_student_id() <= grade_b.get_student_id())
+        return gnome_sort(sorted_by_id, sort_fn=lambda grade_a, grade_b: grade_a.get_assignment_id() <= grade_b.get_assignment_id())
 
     def get_by_assignment(self, assignment_id):
         return filter_items(self.__grades, filter_fn=lambda grade: grade.get_assignment_id() == assignment_id)

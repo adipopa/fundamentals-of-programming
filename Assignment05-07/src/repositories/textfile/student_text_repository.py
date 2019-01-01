@@ -89,8 +89,8 @@ class StudentTextRepository:
             while len(line) > 0:
                 line = line.split(',')
                 self.__students.add(Student(int(line[0]), line[1], int(line[2])))
+                self.__count += 1
                 line = file.readline().strip()
-            self.__count = self.__students[-1].get_student_id() + 1
             file.close()
         except IOError as e:
             raise e
