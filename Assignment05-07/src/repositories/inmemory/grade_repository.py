@@ -1,5 +1,7 @@
 from repositories.repository_exception import RepositoryException
 
+from structures.collection import *
+
 
 class GradeRepository:
     """
@@ -10,7 +12,7 @@ class GradeRepository:
         """
         Constructor for grade repository class that sets up the array of grades in the repo
         """
-        self.__grades = []
+        self.__grades = Collection()
 
     def add(self, grade):
         """
@@ -18,7 +20,7 @@ class GradeRepository:
         grade - An instance of Grade
         """
         if not any(old_grade == grade for old_grade in self.__grades):
-            self.__grades.append(grade)
+            self.__grades.add(grade)
 
     def update(self, assignment_id, student_id, grade):
         grade_index = self.find_grade_index(assignment_id, student_id)
@@ -37,16 +39,17 @@ class GradeRepository:
         Method for retrieving all the grades
         output: An array of all the grades in the repo
         """
-        return sorted(self.__grades, key=lambda grade: (grade.get_assignment_id(), grade.get_student_id()))
+        sorted_by_id = gnome_sort(self.__grades, sort_fn=lambda grade_a, grade_b: grade_a.get_student_id() <= grade_b.get_student_id())
+        return gnome_sort(sorted_by_id, sort_fn=lambda grade_a, grade_b: grade_a.get_assignment_id() <= grade_b.get_assignment_id())
 
     def get_by_assignment(self, assignment_id):
-        return [grade for grade in self.__grades if grade.get_assignment_id() == assignment_id]
+        return filter_items(self.__grades, filter_fn=lambda grade: grade.get_assignment_id() == assignment_id)
 
     def get_by_student(self, student_id):
-        return [grade for grade in self.__grades if grade.get_student_id() == student_id]
+        return filter_items(self.__grades, filter_fn=lambda grade: grade.get_student_id() == student_id)
 
     def get_by_grade(self, is_graded):
-        return [grade for grade in self.__grades if (grade.get_grade() is not None if is_graded else grade.get_grade() is None)]
+        return filter_items(self.__grades, filter_fn=lambda grade: (grade.get_grade() is not None if is_graded else grade.get_grade() is None))
 
     def find_grade_index(self, assignment_id, student_id):
         for index in range(len(self.__grades)):

@@ -1,5 +1,7 @@
 from repositories.repository_exception import RepositoryException
 
+from structures.collection import *
+
 
 class StudentRepository:
     """
@@ -10,7 +12,7 @@ class StudentRepository:
         """
         Constructor for student repository class that sets up the array of students in the repo
         """
-        self.__students = []
+        self.__students = Collection()
         self.__count = 1
 
     def add(self, student):
@@ -21,7 +23,7 @@ class StudentRepository:
         if not student.get_student_id():
             student.set_student_id(self.__count)
             self.__count += 1
-        self.__students.append(student)
+        self.__students.add(student)
 
     def get(self, student_id):
         """
@@ -36,7 +38,7 @@ class StudentRepository:
         Method for retrieving all the students
         output: An array of all the students in the repo
         """
-        return sorted(self.__students, key=lambda student: student.get_student_id())
+        return gnome_sort(self.__students, sort_fn=lambda student_a, student_b: student_a.get_student_id() <= student_b.get_student_id())
 
     def get_by_group(self, group):
         """
@@ -44,7 +46,7 @@ class StudentRepository:
         group - The group of students (integer)
         output: An array of students part of a given group
         """
-        return [student for student in self.__students if student.get_group() == group]
+        return filter_items(self.__students, filter_fn=lambda student: student.get_group() == group)
 
     def update(self, student_id, student):
         self.__students[self.find_student_index(student_id)] = student
