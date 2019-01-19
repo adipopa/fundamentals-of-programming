@@ -44,7 +44,7 @@ class StudentBinaryRepository:
         Method for retrieving all the students
         output: An array of all the students in the repo
         """
-        return gnome_sort(self.__students, sort_fn=lambda student_a, student_b: student_a.get_student_id() <= student_b.get_student_id())
+        return gnome_sort(self.__students, sort_function=lambda student_a, student_b: student_a.get_student_id() <= student_b.get_student_id())
 
     def get_by_group(self, group):
         """
@@ -52,7 +52,7 @@ class StudentBinaryRepository:
         group - The group of students (integer)
         output: An array of students part of a given group
         """
-        return filter_items(self.__students, filter_fn=lambda student: student.get_group() == group)
+        return filter_items(self.__students, filter_function=lambda student: student.get_group() == group)
 
     def update(self, student_id, student):
         self.__students[self.find_student_index(student_id)] = student
