@@ -67,8 +67,8 @@ try:
     else:
         raise IOError("Invalid repository in settings.properties")
     settings_file.close()
-except IOError as e:
-    raise e
+except IOError as io_error:
+    raise io_error
 
 '''
     3. Call the generator methods for each of the student, assignment and grade repositories if none of the repositories
