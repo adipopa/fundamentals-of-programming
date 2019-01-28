@@ -31,11 +31,11 @@ class TestCollection(TestCase):
 
     def test_gnome_sort(self):
         unsorted_items = self.__items[:]
-        sorted_items = gnome_sort(self.__items, sort_fn=lambda item_a, item_b: item_a['name'] <= item_b['name'])
+        sorted_items = gnome_sort(self.__items, sort_function=lambda item_a, item_b: item_a['name'] <= item_b['name'])
         self.assertEqual(len(sorted_items), 2)
         self.assertEqual(sorted_items[0], unsorted_items[1])
 
     def test_filter_items(self):
-        filtered_items = filter_items(self.__items, filter_fn=lambda item: item['name'] == 'Jack')
+        filtered_items = filter_items(self.__items, filter_function=lambda item: item['name'] == 'Jack')
         self.assertEqual(len(filtered_items), 1)
         self.assertEqual(filtered_items[0], self.__items[1])

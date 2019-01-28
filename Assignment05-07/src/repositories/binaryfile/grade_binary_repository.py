@@ -47,17 +47,17 @@ class GradeBinaryRepository:
         Method for retrieving all the grades
         output: An array of all the grades in the repo
         """
-        sorted_by_id = gnome_sort(self.__grades, sort_fn=lambda grade_a, grade_b: grade_a.get_student_id() <= grade_b.get_student_id())
-        return gnome_sort(sorted_by_id, sort_fn=lambda grade_a, grade_b: grade_a.get_assignment_id() <= grade_b.get_assignment_id())
+        sorted_by_id = gnome_sort(self.__grades, sort_function=lambda grade_a, grade_b: grade_a.get_student_id() <= grade_b.get_student_id())
+        return gnome_sort(sorted_by_id, sort_function=lambda grade_a, grade_b: grade_a.get_assignment_id() <= grade_b.get_assignment_id())
 
     def get_by_assignment(self, assignment_id):
-        return filter_items(self.__grades, filter_fn=lambda grade: grade.get_assignment_id() == assignment_id)
+        return filter_items(self.__grades, filter_function=lambda grade: grade.get_assignment_id() == assignment_id)
 
     def get_by_student(self, student_id):
-        return filter_items(self.__grades, filter_fn=lambda grade: grade.get_student_id() == student_id)
+        return filter_items(self.__grades, filter_function=lambda grade: grade.get_student_id() == student_id)
 
     def get_by_grade(self, is_graded):
-        return filter_items(self.__grades, filter_fn=lambda grade: (grade.get_grade() is not None if is_graded else grade.get_grade() is None))
+        return filter_items(self.__grades, filter_function=lambda grade: (grade.get_grade() is not None if is_graded else grade.get_grade() is None))
 
     def find_grade_index(self, assignment_id, student_id):
         for index in range(len(self.__grades)):

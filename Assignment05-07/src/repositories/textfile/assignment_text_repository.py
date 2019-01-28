@@ -46,7 +46,7 @@ class AssignmentTextRepository:
         Method for retrieving all the assignments
         output: An array of all the assignments in the repo
         """
-        return gnome_sort(self.__assignments, sort_fn=lambda assignment_a, assignment_b: assignment_a.get_assignment_id() <= assignment_b.get_assignment_id())
+        return gnome_sort(self.__assignments, sort_function=lambda assignment_a, assignment_b: assignment_a.get_assignment_id() <= assignment_b.get_assignment_id())
 
     def update(self, assignment_id, assignment):
         """

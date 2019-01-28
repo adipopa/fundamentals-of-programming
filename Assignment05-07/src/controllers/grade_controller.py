@@ -102,7 +102,7 @@ class GradeController:
         students_by_assignment = Collection()
         for grade in grades_by_assignment:
             students_by_assignment.add(self.__student_repository.get(grade.get_student_id()))
-        return gnome_sort(students_by_assignment, sort_fn=lambda student_a, student_b: student_a.get_name() <= student_b.get_name())
+        return gnome_sort(students_by_assignment, sort_function=lambda student_a, student_b: student_a.get_name() <= student_b.get_name())
 
     def retrieve_late_students(self):
         late_students = Collection()
@@ -116,7 +116,7 @@ class GradeController:
 
     def retrieve_best_students(self):
         best_students = self.__student_repository.get_all()
-        return gnome_sort(best_students, sort_fn=lambda student_a, student_b: self.average_student_grade(student_a.get_student_id()) >= self.average_student_grade(student_b.get_student_id()))
+        return gnome_sort(best_students, sort_function=lambda student_a, student_b: self.average_student_grade(student_a.get_student_id()) >= self.average_student_grade(student_b.get_student_id()))
 
     def retrieve_assignments_by_average_grade(self):
         assignments_by_average_grade = Collection()
@@ -125,7 +125,7 @@ class GradeController:
             grades_by_grade = self.__grade_repository.get_by_grade(is_graded=True)
             if len(intersection(grades_by_assignment, grades_by_grade)) != 0:
                 assignments_by_average_grade.add(assignment)
-        return gnome_sort(assignments_by_average_grade, sort_fn=lambda assignment_a, assignment_b: self.average_assignment_grade(assignment_a.get_assignment_id()) <= self.average_assignment_grade(assignment_b.get_assignment_id()))
+        return gnome_sort(assignments_by_average_grade, sort_function=lambda assignment_a, assignment_b: self.average_assignment_grade(assignment_a.get_assignment_id()) <= self.average_assignment_grade(assignment_b.get_assignment_id()))
 
     def average_student_grade(self, student_id):
         grades_by_student = self.__grade_repository.get_by_student(student_id)
