@@ -10,8 +10,11 @@ class TestCollection(TestCase):
     def setUp(self):
         self.__items = [
             {'id': 1, 'name': 'Thomas', 'group': 916},
-            {'id': 2, 'name': 'Jack', 'group': 914},
+            {'id': 2, 'name': 'Jack', 'group': 914}
         ]
+
+    def tearDown(self):
+        super().tearDown()
 
     def test_add(self):
         student1 = Student(1, "Jerry", 913)

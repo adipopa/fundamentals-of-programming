@@ -2,19 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4153009b-e67e-42de-a9fe-d78c2dfec5fe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/controllers/controller_exception.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controllers/game_controller.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/board.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domain/player.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/settings.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ux/console.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ux/gui.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assignment03-04/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment03-04/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fawlty-towers/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fawlty-towers/src/controllers/hotel_controller.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fawlty-towers/src/domain/reservation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fawlty-towers/src/domain/room.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fawlty-towers/src/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fawlty-towers/src/repositories/hotel_repository.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fawlty-towers/src/reservations.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fawlty-towers/src/rooms.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fawlty-towers/src/ui/console.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fawlty-towers/src/utils/helper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment01/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment01/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Assignment05-07/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment05-07/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assignment05-07/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment05-07/src/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment05-07/src/testing/test_collection.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment05-07/src/testing/test_collection.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment10.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment10.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hammurabi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Hammurabi/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,68 +29,13 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Assignment10$main.coverage" NAME="main Coverage Results" MODIFIED="1547101998138" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="1570486504">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="8" />
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.11" value="1" />
-          <entry key="project.open.time.12" value="1" />
-          <entry key="project.open.time.15" value="1" />
-          <entry key="project.open.time.18" value="1" />
-          <entry key="project.open.time.2" value="1" />
-          <entry key="project.open.time.3" value="1" />
-          <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="8" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="properties" value="2" />
-          <entry key="py" value="12" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="Properties" value="2" />
-          <entry key="Python" value="12" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="main" value="24" />
-          <entry key="properties" value="97" />
-          <entry key="py" value="17013" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="Properties" value="97" />
-          <entry key="Python" value="17037" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="592">
-              <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/domain/player.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
+            <state relative-caret-position="414">
               <caret line="18" selection-start-line="18" selection-end-line="18" />
-              <folding>
-                <marker date="1547077246433" expanded="true" signature="46:52" ph="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -96,7 +44,7 @@
         <entry file="file://$PROJECT_DIR$/src/settings.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="23">
-              <caret line="1" column="17" lean-forward="true" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+              <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -104,22 +52,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ux/console.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2528">
-              <caret line="113" column="36" lean-forward="true" selection-start-line="113" selection-start-column="36" selection-end-line="113" selection-end-column="36" />
+            <state relative-caret-position="2599">
+              <caret line="113" column="36" selection-start-line="113" selection-start-column="36" selection-end-line="113" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/domain/board.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="47">
-              <caret line="8" column="33" lean-forward="true" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
-              <folding>
-                <marker date="1547101392798" expanded="true" signature="12:13" ph="..." />
-                <marker date="1547101392798" expanded="true" signature="203:240" ph="..." />
-                <marker date="1547101392798" expanded="true" signature="234:240" ph="..." />
-              </folding>
+            <state relative-caret-position="184">
+              <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -127,14 +70,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controllers/game_controller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2190">
-              <caret line="114" column="40" lean-forward="true" selection-start-line="114" selection-start-column="40" selection-end-line="114" selection-end-column="40" />
-              <folding>
-                <marker date="1547101567179" expanded="true" signature="130:131" ph="..." />
-                <marker date="1547101567179" expanded="true" signature="130:136" ph="..." />
-                <marker date="1547101567179" expanded="true" signature="694:700" ph="..." />
-                <marker date="1547101567179" expanded="true" signature="1797:1803" ph="..." />
-              </folding>
+            <state relative-caret-position="-3243">
+              <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -153,10 +90,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="161">
               <caret line="7" selection-start-line="7" selection-end-line="7" />
-              <folding>
-                <marker date="1546530005446" expanded="true" signature="10:11" ph="..." />
-                <marker date="1546530005446" expanded="true" signature="10:16" ph="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -215,14 +148,6 @@
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="05ae8bcd-426c-4f69-a005-8341db4f2130" />
   </component>
-  <component name="GradleLocalSettings">
-    <option name="modificationStamps">
-      <map>
-        <entry key="$USER_HOME$/IntelliJProjects/gs-gradle-master/complete" value="1486593920656" />
-        <entry key="$USER_HOME$/IntelliJProjects/gs-rest-service-master/complete" value="1486594354193" />
-      </map>
-    </option>
-  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -241,16 +166,11 @@
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-23" />
-    <option name="width" value="1206" />
-    <option name="height" value="1045" />
+    <option name="x" value="477" />
+    <option name="y" value="28" />
+    <option name="width" value="1248" />
+    <option name="height" value="703" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -306,7 +226,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -356,6 +275,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -395,7 +315,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="Applet" factoryName="Applet">
+    <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -408,6 +328,7 @@
       </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -435,7 +356,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
+    <configuration default="true" type="TestNG">
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <properties />
       <listeners />
@@ -443,11 +364,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
       <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file id="idea.log" enabled="true" />
+      <predefined_log_file enabled="true" id="idea.log" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -476,17 +397,19 @@
       <workItem from="1547042353619" duration="22186000" />
       <workItem from="1547100804213" duration="144000" />
       <workItem from="1547100980591" duration="1071000" />
+      <workItem from="1551258036036" duration="22000" />
+      <workItem from="1551258142599" duration="615000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46487000" />
+    <option name="totallyTimeSpent" value="47124000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1691" height="917" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16513199" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16881523" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -505,6 +428,7 @@
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32984293" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="11" />
+      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -515,13 +439,11 @@
       <window_info anchor="right" id="SciView" order="7" />
       <window_info anchor="right" id="Database" order="8" />
       <window_info anchor="right" id="Maven Projects" order="9" />
+      <window_info anchor="right" id="Maven" order="10" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/__init__.py" />
@@ -534,6 +456,34 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/domain/ai.py" />
+    <entry file="file://$PROJECT_DIR$/src/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="759">
+          <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/domain/player.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/settings.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ux/console.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2599">
+          <caret line="113" column="36" selection-start-line="113" selection-start-column="36" selection-end-line="113" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/controllers/controller_exception.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
@@ -545,66 +495,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
           <caret line="7" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <marker date="1546530005446" expanded="true" signature="10:11" ph="..." />
-            <marker date="1546530005446" expanded="true" signature="10:16" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/domain/board.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="47">
-          <caret line="8" column="33" lean-forward="true" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
-          <folding>
-            <marker date="1547101392798" expanded="true" signature="12:13" ph="..." />
-            <marker date="1547101392798" expanded="true" signature="203:240" ph="..." />
-            <marker date="1547101392798" expanded="true" signature="234:240" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/domain/player.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <marker date="1547077246433" expanded="true" signature="46:52" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controllers/game_controller.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2190">
-          <caret line="114" column="40" lean-forward="true" selection-start-line="114" selection-start-column="40" selection-end-line="114" selection-end-column="40" />
-          <folding>
-            <marker date="1547101567179" expanded="true" signature="130:131" ph="..." />
-            <marker date="1547101567179" expanded="true" signature="130:136" ph="..." />
-            <marker date="1547101567179" expanded="true" signature="694:700" ph="..." />
-            <marker date="1547101567179" expanded="true" signature="1797:1803" ph="..." />
-          </folding>
+        <state relative-caret-position="-3243">
+          <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ux/console.py">
+    <entry file="file://$PROJECT_DIR$/src/domain/board.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2528">
-          <caret line="113" column="36" lean-forward="true" selection-start-line="113" selection-start-column="36" selection-end-line="113" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/settings.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="17" lean-forward="true" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="592">
-          <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
+        <state relative-caret-position="184">
+          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
         </state>
       </provider>
     </entry>

@@ -2,33 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5b786e0-610d-40bf-8429-d2cca33f4060" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Assignment10/src/controllers/controller_exception.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignment10/src/controllers/game_controller.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignment10/src/domain/board.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignment10/src/domain/player.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignment10/src/settings.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignment10/src/ux/console.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignment10/src/ux/gui.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assignment03-04/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment03-04/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fawlty-towers/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fawlty-towers/src/controllers/hotel_controller.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fawlty-towers/src/domain/reservation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fawlty-towers/src/domain/room.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fawlty-towers/src/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fawlty-towers/src/repositories/hotel_repository.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fawlty-towers/src/reservations.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fawlty-towers/src/rooms.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fawlty-towers/src/ui/console.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fawlty-towers/src/utils/helper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment01/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment01/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/grade_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/grade_controller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repositories/binaryfile/assignment_binary_repository.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/repositories/binaryfile/assignment_binary_repository.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repositories/binaryfile/grade_binary_repository.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/repositories/binaryfile/grade_binary_repository.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repositories/binaryfile/student_binary_repository.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/repositories/binaryfile/student_binary_repository.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repositories/inmemory/assignment_repository.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/repositories/inmemory/assignment_repository.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repositories/inmemory/grade_repository.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/repositories/inmemory/grade_repository.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repositories/inmemory/student_repository.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/repositories/inmemory/student_repository.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repositories/textfile/assignment_text_repository.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/repositories/textfile/assignment_text_repository.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repositories/textfile/grade_text_repository.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/repositories/textfile/grade_text_repository.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repositories/textfile/student_text_repository.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/repositories/textfile/student_text_repository.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/structures/collection.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/structures/collection.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/students.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/src/students.pickle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/students.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/students.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/testing/test_collection.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/testing/test_collection.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Assignment10/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment10/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assignment10/Assignment10.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment10/Assignment10.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assignment10/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment10/src/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hammurabi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Hammurabi/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,125 +32,20 @@
     </option>
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Assignment05_07$main.coverage" NAME="main Coverage Results" MODIFIED="1547103291290" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
-    <SUITE FILE_PATH="coverage/Assignment05_07$Unittests_in_test_assignmentController_py.coverage" NAME="Unittests in test_assignmentController.py Coverage Results" MODIFIED="1547102676188" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/testing" />
+    <SUITE FILE_PATH="coverage/Assignment05_07$Unitests_in_testing.coverage" NAME="Unitests in testing Coverage Results" MODIFIED="1548712698000" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Assignment05_07$Unittests_in_test_student_py.coverage" NAME="Unittests in test_student.py Coverage Results" MODIFIED="1543448165694" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/testing" />
+    <SUITE FILE_PATH="coverage/Assignment05_07$Unittests_in_test_assignmentController_py.coverage" NAME="Unittests in test_assignmentController.py Coverage Results" MODIFIED="1547102676188" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/testing" />
+    <SUITE FILE_PATH="coverage/Assignment05_07$main.coverage" NAME="main Coverage Results" MODIFIED="1548712723242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/Assignment05_07$lab_assignments.coverage" NAME="main Coverage Results" MODIFIED="1542739747287" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/Assignment05_07$Unittests_in_test_assignment_py.coverage" NAME="Unittests in test_assignment.py Coverage Results" MODIFIED="1543448160491" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/testing" />
-    <SUITE FILE_PATH="coverage/Assignment05_07$Unitests_in_testing.coverage" NAME="Unitests in testing Coverage Results" MODIFIED="1547102709106" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-  </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="1729348664">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="6" />
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.1" value="2" />
-          <entry key="project.open.time.10" value="1" />
-          <entry key="project.open.time.14" value="1" />
-          <entry key="project.open.time.3" value="1" />
-          <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="7" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="iml" value="1" />
-          <entry key="py" value="30" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="IDEA_MODULE" value="1" />
-          <entry key="Python" value="30" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="dummy" value="93" />
-          <entry key="py" value="5938" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="PLAIN_TEXT" value="93" />
-          <entry key="Python" value="5938" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.js.language.service.starts" />
-      <usages-collector id="statistics.spring.boot.run.usages" />
-      <usages-collector id="statistics.vcs.git.usages" />
-      <usages-collector id="statistics.spring.boot.mvc.usages" />
-    </session>
-    <session id="21683783">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="45" />
-          <entry key="project.open.time.0" value="3" />
-          <entry key="project.open.time.1" value="11" />
-          <entry key="project.open.time.10" value="1" />
-          <entry key="project.open.time.11" value="3" />
-          <entry key="project.open.time.12" value="2" />
-          <entry key="project.open.time.13" value="3" />
-          <entry key="project.open.time.15" value="4" />
-          <entry key="project.open.time.16" value="1" />
-          <entry key="project.open.time.17" value="3" />
-          <entry key="project.open.time.18" value="1" />
-          <entry key="project.open.time.19" value="2" />
-          <entry key="project.open.time.2" value="5" />
-          <entry key="project.open.time.20" value="1" />
-          <entry key="project.open.time.22" value="2" />
-          <entry key="project.open.time.29" value="1" />
-          <entry key="project.open.time.3" value="2" />
-          <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="46" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="iml" value="4" />
-          <entry key="java" value="1" />
-          <entry key="pickle" value="9" />
-          <entry key="properties" value="3" />
-          <entry key="py" value="597" />
-          <entry key="txt" value="7" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="IDEA_MODULE" value="4" />
-          <entry key="JAVA" value="1" />
-          <entry key="PLAIN_TEXT" value="16" />
-          <entry key="Properties" value="3" />
-          <entry key="Python" value="597" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="dummy" value="54" />
-          <entry key="iml" value="8" />
-          <entry key="properties" value="115" />
-          <entry key="py" value="34054" />
-          <entry key="txt" value="24" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="IDEA_MODULE" value="8" />
-          <entry key="PLAIN_TEXT" value="78" />
-          <entry key="Properties" value="115" />
-          <entry key="Python" value="34054" />
-        </counts>
-      </usages-collector>
-    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/structures/collection.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="48" column="59" selection-start-line="48" selection-start-column="59" selection-end-line="48" selection-end-column="59" />
+            <state relative-caret-position="667">
+              <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -169,8 +53,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/testing/test_collection.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-8">
-              <caret line="26" selection-start-line="26" selection-end-line="26" />
+            <state relative-caret-position="598">
+              <caret line="26" column="32" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/repositories/repository_exception.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/testing/test_assignment.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -178,17 +76,53 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/repositories/inmemory/assignment_repository.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-8">
+            <state relative-caret-position="966">
               <caret line="42" column="48" selection-start-line="42" selection-start-column="48" selection-end-line="42" selection-end-column="48" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/repositories/inmemory/student_repository.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/repositories/textfile/assignment_text_repository.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-8">
-              <caret line="47" column="11" selection-start-line="47" selection-start-column="11" selection-end-line="47" selection-end-column="11" />
+            <state relative-caret-position="458">
+              <caret line="106" column="41" selection-start-line="106" selection-start-column="41" selection-end-line="106" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2346">
+              <caret line="102" column="13" selection-start-line="102" selection-start-column="13" selection-end-line="102" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ui/menu.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1265">
+              <caret line="55" column="37" selection-start-line="55" selection-start-column="37" selection-end-line="55" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/controllers/controller_exception.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="6" selection-start-column="6" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/utils/helper.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -205,7 +139,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>;</find>
       <find>delete</find>
       <find>exit</find>
       <find>validator</find>
@@ -235,6 +168,7 @@
       <find>filter_fn</find>
       <find>sort_fn</find>
       <find>filter_items(</find>
+      <find>filter</find>
     </findStrings>
     <replaceStrings>
       <replace>student_id</replace>
@@ -262,14 +196,6 @@
   </component>
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="05ae8bcd-426c-4f69-a005-8341db4f2130" />
-  </component>
-  <component name="GradleLocalSettings">
-    <option name="modificationStamps">
-      <map>
-        <entry key="$USER_HOME$/IntelliJProjects/gs-gradle-master/complete" value="1486593920656" />
-        <entry key="$USER_HOME$/IntelliJProjects/gs-rest-service-master/complete" value="1486594354193" />
-      </map>
-    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -305,7 +231,6 @@
         <option value="$PROJECT_DIR$/src/utils/helper.py" />
         <option value="$PROJECT_DIR$/src/repositories/inmemory/grade_repository.py" />
         <option value="$PROJECT_DIR$/src/utils/generator.py" />
-        <option value="$PROJECT_DIR$/src/testing/test_collection.py" />
         <option value="$PROJECT_DIR$/src/controllers/grade_controller.py" />
         <option value="$PROJECT_DIR$/src/repositories/binaryfile/student_binary_repository.py" />
         <option value="$PROJECT_DIR$/src/repositories/binaryfile/assignment_binary_repository.py" />
@@ -325,20 +250,15 @@
         <option value="$PROJECT_DIR$/src/testing/test_assignmentController.py" />
         <option value="$PROJECT_DIR$/src/repositories/inmemory/assignment_repository.py" />
         <option value="$PROJECT_DIR$/src/structures/collection.py" />
+        <option value="$PROJECT_DIR$/src/testing/test_collection.py" />
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-11" />
-    <option name="y" value="-11" />
-    <option name="width" value="1939" />
-    <option name="height" value="1052" />
+    <option name="x" value="476" />
+    <option name="y" value="27" />
+    <option name="width" value="1249" />
+    <option name="height" value="704" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -395,7 +315,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -482,6 +401,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -489,7 +409,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547103332021" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548712986054" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Assignment08" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="C:/Program Files/nodejs/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -526,7 +446,7 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.main">
-    <configuration default="true" type="Applet" factoryName="Applet">
+    <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -539,6 +459,7 @@
       </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -566,7 +487,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
+    <configuration default="true" type="TestNG">
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <properties />
       <listeners />
@@ -574,11 +495,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
       <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file id="idea.log" enabled="true" />
+      <predefined_log_file enabled="true" id="idea.log" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -632,8 +553,8 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python tests.Unitests in testing" />
       <item itemvalue="Python.main" />
+      <item itemvalue="Python tests.Unitests in testing" />
       <item itemvalue="Python tests.Unittests in test_assignmentController.py" />
     </list>
     <recent_temporary>
@@ -706,49 +627,52 @@
       <workItem from="1547046500841" duration="604000" />
       <workItem from="1547100952792" duration="25000" />
       <workItem from="1547102060543" duration="1256000" />
+      <workItem from="1548712096477" duration="1157000" />
+      <workItem from="1548754103515" duration="61000" />
+      <workItem from="1551258862144" duration="603000" />
+      <workItem from="1551262005682" duration="13000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unitests_in_testing - 2019.01.01 at 19h 06m 26s.xml">
-      <configuration name="Unitests in testing" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unitests_in_testing - 2019.01.01 at 19h 06m 30s.xml">
-      <configuration name="Unitests in testing" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unitests_in_testing - 2019.01.01 at 19h 10m 42s.xml">
-      <configuration name="Unitests in testing" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unitests_in_testing - 2019.01.01 at 19h 28m 48s.xml">
-      <configuration name="Unitests in testing" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unitests_in_testing - 2019.01.01 at 19h 45m 59s.xml">
-      <configuration name="Unitests in testing" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unitests_in_testing - 2019.01.01 at 19h 46m 10s.xml">
-      <configuration name="Unitests in testing" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_assignmentController_py - 2019.01.10 at 08h 44m 37s.xml">
-      <configuration name="Unittests in test_assignmentController.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unitests_in_testing - 2019.01.10 at 08h 44m 49s.xml">
-      <configuration name="Unitests in testing" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unitests_in_testing - 2019.01.10 at 08h 44m 59s.xml">
       <configuration name="Unitests in testing" configurationId="tests" />
     </history-entry>
     <history-entry file="Unitests_in_testing - 2019.01.10 at 08h 45m 09s.xml">
       <configuration name="Unitests in testing" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unitests_in_testing - 2019.01.28 at 23h 56m 25s.xml">
+      <configuration name="Unitests in testing" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unitests_in_testing - 2019.01.28 at 23h 56m 54s.xml">
+      <configuration name="Unitests in testing" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unitests_in_testing - 2019.01.28 at 23h 57m 00s.xml">
+      <configuration name="Unitests in testing" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unitests_in_testing - 2019.01.28 at 23h 57m 08s.xml">
+      <configuration name="Unitests in testing" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unitests_in_testing - 2019.01.28 at 23h 57m 37s.xml">
+      <configuration name="Unitests in testing" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unitests_in_testing - 2019.01.28 at 23h 57m 43s.xml">
+      <configuration name="Unitests in testing" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unitests_in_testing - 2019.01.28 at 23h 58m 00s.xml">
+      <configuration name="Unitests in testing" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unitests_in_testing - 2019.01.28 at 23h 58m 18s.xml">
+      <configuration name="Unitests in testing" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="148653000" />
+    <option name="totallyTimeSpent" value="150487000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1691" height="917" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22590546" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23818293" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -768,6 +692,7 @@
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.26028237" side_tool="true" weight="0.46596858" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32853404" />
       <window_info anchor="bottom" id="Messages" order="12" />
+      <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -778,6 +703,7 @@
       <window_info anchor="right" id="SciView" order="7" />
       <window_info anchor="right" id="Database" order="8" />
       <window_info anchor="right" id="Maven Projects" order="9" />
+      <window_info anchor="right" id="Maven" order="10" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -792,9 +718,6 @@
         <option value="1" />
       </list>
     </option>
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -879,13 +802,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/domain/operation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/validation/validation_exception.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
@@ -897,13 +813,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="650">
           <caret line="30" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/menu.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1150">
-          <caret line="50" column="41" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -1063,13 +972,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/repositories/textfile/assignment_text_repository.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="98" column="103" lean-forward="true" selection-start-line="98" selection-start-column="103" selection-end-line="99" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/repositories/textfile/student_text_repository.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2070">
@@ -1086,27 +988,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/assignments.pickle">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/helper.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controllers/controller_exception.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="42" lean-forward="true" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="59" column="73" selection-start-line="59" selection-start-column="73" selection-end-line="59" selection-end-column="73" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/testing/test_grade.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -1165,38 +1046,76 @@
         <state relative-caret-position="-9" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/testing/test_assignment.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="75" lean-forward="true" selection-start-line="9" selection-start-column="75" selection-end-line="9" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/testing/test_collection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/repositories/inmemory/assignment_repository.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="42" column="48" selection-start-line="42" selection-start-column="48" selection-end-line="42" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/repositories/inmemory/student_repository.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
+        <state relative-caret-position="1081">
           <caret line="47" column="11" selection-start-line="47" selection-start-column="11" selection-end-line="47" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/structures/collection.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="48" column="59" selection-start-line="48" selection-start-column="59" selection-end-line="48" selection-end-column="59" />
+        <state relative-caret-position="667">
+          <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/testing/test_collection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="26" column="32" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/repositories/repository_exception.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/testing/test_assignment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/repositories/inmemory/assignment_repository.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="966">
+          <caret line="42" column="48" selection-start-line="42" selection-start-column="48" selection-end-line="42" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2346">
+          <caret line="102" column="13" selection-start-line="102" selection-start-column="13" selection-end-line="102" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/menu.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1265">
+          <caret line="55" column="37" selection-start-line="55" selection-start-column="37" selection-end-line="55" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controllers/controller_exception.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="6" selection-start-column="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/helper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/repositories/textfile/assignment_text_repository.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="458">
+          <caret line="106" column="41" selection-start-line="106" selection-start-column="41" selection-end-line="106" selection-end-column="41" />
         </state>
       </provider>
     </entry>
